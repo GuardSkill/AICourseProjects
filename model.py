@@ -54,9 +54,6 @@ def forward_propagation(X, parameters):
 
 
 def one_hot_matrix(labels, C):
-    # Create a tf.constant equal to C (depth), name it 'C'. (approx. 1 line)
-
-    # Use tf.one_hot, be careful with the axis (approx. 1 line)
     one_hot_matrix = tf.one_hot(labels, C, axis=-1)
     # Create the session (approx. 1 line)
     sess = tf.Session()
@@ -133,7 +130,7 @@ def model(X_train, Y_train, X_test, Y_test, message, learning_rate=0.0001,
         # Calculate accuracy on the test set
         accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
         accurate = accuracy.eval({X: X_test, Y: Y_test})
-        print("Train Accuracy:", accuracy.eval({X: X_train, Y: Y_train}))
-        print("Test Accuracy:", accurate)
+        print(message+"train Accuracy:", accuracy.eval({X: X_train, Y: Y_train}))
+        print(message+"test Accuracy:", accurate)
 
         return parameters, accurate
