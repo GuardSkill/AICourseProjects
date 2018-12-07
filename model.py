@@ -71,7 +71,7 @@ def compute_cost(Z3, Y):
     return cost
 
 
-def model(X_train, Y_train, X_test, Y_test, message, learning_rate=0.0001,
+def model(X_train, Y_train, X_test, Y_test, message, learning_rate=0.0015,
           num_epochs=10000, print_cost=True):
     ops.reset_default_graph()  # to be able to return the model without overwriting tf variables
     (n_x, m) = X_train.shape  # (n_x: input size, m : number of examples in the train set)

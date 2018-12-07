@@ -1,6 +1,6 @@
 # AICourseProjects
 AI Course Assignment in SWUST
-
+李思源 卢璐
 
 # DataSets
 [flight](https://archive.ics.uci.edu/ml/datasets/Statlog+%28Shuttle%29)
@@ -13,6 +13,7 @@ AI Course Assignment in SWUST
 
 # Methods
 Neural Network
+
 SVM (need modify a little code)
 
 

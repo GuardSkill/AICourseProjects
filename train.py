@@ -6,7 +6,6 @@ from model import one_hot_matrix
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report, confusion_matrix
 import pandas as pd
-import matplotlib.pyplot as plt
 
 
 def random_dataset(X, Y, seed=0):
@@ -76,7 +75,7 @@ def SVM_method(X_train, Y_train, X_test, Y_test, message):
     return None
 
 
-data_name = 'heart'
+data_name = 'iris'
 X, Y = load_data(data_name)
 test_precision = np.ones((10, 10))
 # columns=['%d fold' % x for x in range(1,11)]
